@@ -13,3 +13,8 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.15/g' package/base-files/files/bin/config_generate
+
+
+# python-cryptography
+rm -rf feeds/packages/lang/python/python-cryptography
+svn co https://github.com/openwrt/packages/trunk/lang/python/python-cryptography feeds/packages/lang/python/python-cryptography
