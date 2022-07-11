@@ -17,4 +17,3 @@
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git kenzok https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
-echo 'src-git tencentddns https://github.com/msylgj/OpenWrt_luci-app' >>feeds.conf.default
