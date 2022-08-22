@@ -15,6 +15,13 @@
 sed -i 's/192.168.1.1/10.10.10.15/g' package/base-files/files/bin/config_generate
 
 
+#添加luci-app-amlogic
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
+#添加tx_ddns
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
+
 # python-cryptography
 # rm -rf feeds/packages/lang/python/python-cryptography
 # svn co https://github.com/openwrt/packages/trunk/lang/python/python-cryptography feeds/packages/lang/python/python-cryptography
