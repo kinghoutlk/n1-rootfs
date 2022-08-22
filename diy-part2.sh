@@ -11,8 +11,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-sed -i 's/192.168.1.1/10.10.10.15/g' package/base-files/files/bin/config_generate
+
 
 
 #添加luci-app-amlogic
@@ -20,6 +19,12 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 
 #添加tx_ddns
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
+
+
+
+./scripts/feeds update -a
+./scripts/feeds install -a -f
 
 
 # python-cryptography
