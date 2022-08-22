@@ -17,8 +17,8 @@
 #添加luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
-#添加tx_ddns
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+#添加luci-app-tencentddns
+svn co https://github.com/kenzok8/small-package/tree/main/luci-app-tencentddns package/luci-app-tencentddns
 
 
 
