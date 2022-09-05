@@ -14,8 +14,4 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
-
-
-# Modify default IP
-sed -i 's/192.168.1.1/10.10.10.15/g' package/base-files/files/bin/config_generate
+echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
