@@ -13,20 +13,5 @@
 
 
 
-
-#添加luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-
-#添加luci-app-tencentddns
-svn co https://github.com/kenzok8/small-package/tree/main/luci-app-tencentddns package/luci-app-tencentddns
-
-
-
-
-./scripts/feeds update -a
-./scripts/feeds install -a -f
-
-
-# python-cryptography
-# rm -rf feeds/packages/lang/python/python-cryptography
-# svn co https://github.com/openwrt/packages/trunk/lang/python/python-cryptography feeds/packages/lang/python/python-cryptography
+# Modify default IP
+sed -i 's/192.168.1.1/10.10.10.15/g' package/base-files/files/bin/config_generate
